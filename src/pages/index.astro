@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Nav from '../components/Nav.astro'
+---
+
+<Layout title="Refermate Anywhere - The best browser extension to save and earn money">
+    <Nav/>
+    <div class="main">
+        <main>
+            <div class="hero-content" id="main">
+                <div class="hero-left">
+                    <h1 class="title">The <span class="title-span">only</span> <span class="title-feature-span">browser</span> <br/>extension you'll ever need
+                    </h1>
+                    <h2>Earn cash back and commission at over 31,000+ stores and brands.</h2>
+
+                    <div>
+                        <p>Over $25,000,000 earned and saved</p>
+                        <p>Trusted by over 50,000 members</p>
+                    </div>
+
+                </div>
+                <div class="hero-right"></div>
+            </div>
+        </main>
+        <section>
+            <h2>Exclusive Coupons & Cash Back</h2>
+        </section>
+        <section>
+            <h2>Referral Codes and Commission</h2>
+        </section>
+        <section>
+            <h2>Price Drop & Coupon Alerts</h2>
+        </section>
+        <section>
+            <h2>Create Your Own Storefront</h2>
+        </section>
+        <section>
+            <h2>Savings Results While You Search</h2>
+        </section>
+        <div class="link-card-grid">
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+        </div>
+
+    </div>
+
+
+</Layout>
+
+<style>
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 20rem 8rem;
+    }
+
+    main {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        padding: 4rem;
+        gap: 8rem;
+        min-height: 100%;
+
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-img {
+        min-width: 1070px;
+        height: 1070px;
+        background-image: url("../../public/08.svg");
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .title-span {
+        font-family: "sharp_groteskmedium_italic_20", sans-serif;
+        text-decoration: underline;
+    }
+
+    .title-feature-span {
+        color: firebrick;
+        font-family: sharp_grotesksemibold_20, sans-serif;
+    }
+
+    .title-buttons-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .title-button {
+        color: white;
+        padding: .5rem 1rem;
+        background-color: black;
+        border-radius: 500px;
+    }
+
+
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
+</style>
