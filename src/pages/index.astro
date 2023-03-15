@@ -8,42 +8,43 @@ import Nav from '../components/Nav.astro'
     <Nav/>
     <div class="main">
         <main>
-            <div class="hero-content" id="main">
-                <div class="hero-left">
-                    <h1 class="title">The <span class="title-span">only</span> <span class="title-feature-span">browser</span> extension you'll ever need
+            <section class="hero-content" id="main">
+                <div class="hero-title">
+                    <h1 class="title">The <span class="title-span">only</span> <span
+                            class="title-feature-span">browser</span> extension you'll ever need
                     </h1>
                     <h2>Earn cash back and commission at over 31,000+ stores and brands.</h2>
 
-                    <div>
+                    <div class="tertiary-title">
                         <p>Over $25,000,000 earned and saved</p>
                         <p>Trusted by over 50,000 members</p>
                     </div>
-
                 </div>
-                <div class="hero-right"></div>
-            </div>
+                <div class="hero-image">
+                </div>
+            </section>
+            <section id="coupon-codes">
+                <h2>Exclusive Coupons & Cash Back</h2>
+            </section>
+            <section id="referral-codes">
+                <h2>Referral Codes and Commission</h2>
+            </section>
+            <section id="price-drops">
+                <h2>Price Drop & Coupon Alerts</h2>
+            </section>
+            <section id="storefront">
+                <h2>Create Your Own Storefront</h2>
+            </section>
+            <section id="savings-results">
+                <h2>Savings Results While You Search</h2>
+            </section>
+            <section id="comparison">
+                <h2>See How We Compare</h2>
+            </section>
+            <section id="coming-soon">
+                <h2>Coming Soon - New!</h2>
+            </section>
         </main>
-        <section>
-            <h2>Exclusive Coupons & Cash Back</h2>
-        </section>
-        <section>
-            <h2>Referral Codes and Commission</h2>
-        </section>
-        <section>
-            <h2>Price Drop & Coupon Alerts</h2>
-        </section>
-        <section>
-            <h2>Create Your Own Storefront</h2>
-        </section>
-        <section>
-            <h2>Savings Results While You Search</h2>
-        </section>
-        <section>
-            <h2>See How We Compare</h2>
-        </section>
-        <section>
-            <h2>Coming Soon - New!</h2>
-        </section>
         <div class="link-card-grid">
             <Card/>
             <Card/>
@@ -91,12 +92,13 @@ import Nav from '../components/Nav.astro'
     .main {
         display: flex;
         flex-direction: column;
-        margin-inline: 20rem 8rem;
+        margin-inline: 20rem 4rem;
     }
 
     main {
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         padding-block: 4rem;
         gap: 8rem;
@@ -106,13 +108,16 @@ import Nav from '../components/Nav.astro'
 
     .hero-content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
     }
 
-    .hero-img {
-        min-width: 1070px;
-        height: 1070px;
-        background-image: url("../../public/08.svg");
-        background-repeat: no-repeat;
+    .hero-image {
+        min-width: 100%;
+        min-height: 550px;
+        background-color: aqua;
     }
 
     h1 {
@@ -121,14 +126,19 @@ import Nav from '../components/Nav.astro'
         margin: 0;
     }
 
+    .tertiary-title {
+        display: flex;
+        gap: 1rem;
+    }
+
     .title-span {
-        font-family: "sharp_groteskmedium_italic_20", sans-serif;
-        text-decoration: underline;
+        /*font-family: "sharp_groteskmedium_italic_20", sans-serif;*/
+        /*text-decoration: underline;*/
     }
 
     .title-feature-span {
-        color: firebrick;
-        font-family: sharp_grotesksemibold_20, sans-serif;
+        /*color: firebrick;*/
+        /*font-family: sharp_grotesksemibold_20, sans-serif;*/
     }
 
     .title-buttons-container {

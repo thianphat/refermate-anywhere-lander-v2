@@ -1,37 +1,41 @@
 ---
 import RefermateLogo from "/Refermate.svg"
+
 ---
 
-<div class="nav-container">
-    <nav class="nav">
-        <div class="logo-container">
+<div class="side">
+    <div class="nav-container">
+        <div class="logo">
             <img src={RefermateLogo} alt="Refermate Logo" class="refermate-logo"></img>
         </div>
         <button class="main-btn">Install for Free</button>
-        <a href="#main" class="nav-item active">Welcome</a>
-        <a href="#" class="nav-item">Exclusive Coupons & Cash Back</a>
-        <a href="#" class="nav-item">Referral Codes and Commission</a>
-        <a href="#" class="nav-item">Price Drop & Coupon Alerts</a>
-        <a href="#" class="nav-item">Create Your Own Storefront</a>
-        <a href="#" class="nav-item">Savings Results While You Search</a>
-        <a href="#" class="nav-item">See How We Compare</a>
-        <a href="#" class="nav-item">Coming Soon - New!</a>
-    </nav>
+        <nav class="nav">
+            <a href="#main" class="nav-item active">Welcome</a>
+            <a href="#coupon-codes" class="nav-item">Exclusive Coupons & Cash Back</a>
+            <a href="#referral-codes" class="nav-item">Referral Codes and Commission</a>
+            <a href="#price-drops" class="nav-item">Price Drop & Coupon Alerts</a>
+            <a href="#storefront" class="nav-item">Create Your Own Storefront</a>
+            <a href="#savings-results" class="nav-item">Savings Results While You Search</a>
+            <a href="#comparison" class="nav-item">See How We Compare</a>
+            <a href="#coming-soon" class="nav-item">Coming Soon - New!</a>
+        </nav>
+
+    </div>
 
 
 </div>
 <style>
-    .nav-container {
+    .side {
         flex-grow: 0;
         min-width: 304px;
         min-height: 100%;
     }
 
-    .nav {
+    .nav-container {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         position: fixed;
-        width: 280px;
+        width: 250px;
         height: 100%;
         flex-direction: column;
         justify-content: center;
@@ -42,6 +46,12 @@ import RefermateLogo from "/Refermate.svg"
 
     .main-btn {
         margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+        flex-direction: column;
+        gap: .5rem;
     }
 
     .nav-item {
@@ -58,7 +68,7 @@ import RefermateLogo from "/Refermate.svg"
         color: unset;
     }
 
-    .logo-container {
+    .logo {
         margin: 0 auto;
     }
 
@@ -77,3 +87,17 @@ import RefermateLogo from "/Refermate.svg"
     }
 
 </style>
+
+<script>
+    const buttons = document.querySelectorAll("a.nav-item")
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                console.log('Button was clicked!');
+            });
+        });
+
+
+
+
+</script>
